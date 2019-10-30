@@ -1,1 +1,0 @@
-# pichika.github.io

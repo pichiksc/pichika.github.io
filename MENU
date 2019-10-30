@@ -1,0 +1,20 @@
+Info
+    home                [index.html]
+    bio                 [bio.html]
+    publications        [publications.html]
+    projects            [projects.html]
+
+Courses
+    teaching            [teaching.html]
+    attended            [attended.html]
+
+Resources
+    deep learning       [deep_learning.html]
+    machine learning    [machine_learning.html]
+    optimization        [optimization.html]
+    state estimation    [state_estimation.html]
+    data science        [data_science.html]
+
+ExtraCurrics
+    activities          [activities.html]
+    social websites links [social.html]

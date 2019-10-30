@@ -1,1 +1,1 @@
-# pichika.github.io
+# pichiksc.github.io

@@ -1,0 +1,68 @@
+@media screen and (max-width:1400px){
+    
+    .wrapper h1{
+        font-size: 3rem;
+        line-height: 3.25rem;
+        width:100%;
+        font-weight: 600;
+    }
+    
+    .title-wrapper h1{
+        font-size: 3rem;
+        line-height: 3.25rem;
+        width:100%;
+        font-weight: 600;
+    }
+    
+    .wrapper h2{
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+    
+    .title-wrapper h2{
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+
+    .figcaption{
+    margin-left: 0;
+    margin-right: 0;
+    }
+    
+    body{
+        margin-left: 0;
+        padding: 0 48px;
+    }
+    
+    footer .wrapper{
+    padding: 16px;
+    }
+}
+
+
+
+@media screen and (min-width:1400px){
+
+    #sidenav{
+        position: fixed;
+        top:0;
+        left:0;
+        border-right: none;
+    }
+    
+    .close-icon{
+        visibility: hidden;
+    }
+    
+    .figcaption{
+        margin-top: .25rem;
+    }
+    
+    .column{
+    column-count: 2;
+    column-gap: 1.5rem;
+    column-width: 24rem;
+    padding: 1.5rem 0;
+}
+
+}

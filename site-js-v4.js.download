@@ -1,0 +1,176 @@
+
+
+function setnav() {
+document.getElementById('sidenav').innerHTML = (
+                    '<ul>' +
+                     '<li><a class="home" href="index.html">Beautiful Reports</a></li>' +
+                    '</ul>' +
+                   
+                    '<button class="accordion">preparation</button>' +
+                        '<div class="submenu">' +
+                            '<ul>' +
+                            '<li><a id="know-your-audience" href="know-your-audience.html" class="page">know your audience</a></li>' +
+                            '<li><a id="craft-your-message" href="craft-your-message.html" class="page">craft your message</a></li>' +
+                            '<li><a id="draft-your-report" href="draft-your-report.html" class="page">draft your report</a></li>' +
+                            '</ul>' +
+                        '</div>' +
+    
+                    '<button class="accordion">data</button>' +
+                        '<div class="submenu">' +
+                            '<ul>' +
+                            '<li><a id="filters" href="filters.html" class="page">filter your data</a></li>' +
+                            '<li><a id="choose-right-visual" href="choose-right-visual.html" class="page">choose the right visual</a></li>' +
+                            '</ul>' +
+                        '</div>' +
+    
+                    '<button class="accordion">communication</button>' +
+                        '<div class="submenu">' +
+                            '<ul>' +
+                            '<li><a id="report_level_text" href="report-level_text.html" class="page">guide the way</a></li>' +
+                            '<li><a id="object_level_text" href="object-level_text.html" class="page">give hints and use labels</a></li>' +
+                            '<li><a id="accessibility" href="accessibility.html" class="page">make it accessible</a></li>' +
+                            '</ul>' +
+                        '</div>' +   
+    
+                    '<button class="accordion">layout</button>' +
+                        '<div class="submenu">' +
+                            '<ul>' +
+                            '<li><a id="add_whitespace" href="add_white_space.html" class="page">embrace whitespace</a></li>' +
+                            '<li><a id="layout_simplification" href="layout-simplification.html" class="page">simplify your content</a></li>' +
+                            '<li><a id="scrolling-reports" href="scrolling-reports.html" class="page">consider scrolling</a></li>' +
+                            '</ul>' +
+                        '</div>' +
+    
+                    '<button class="accordion">style</button>' +
+                        '<div class="submenu">' +
+                            '<ul>' +
+                            '<li><a id="color-care" href="color-care.html" class="page">attend to color</a></li>' +
+                            '<li><a id="harmonious-colors" href="harmonious-colors.html" class="page">avoid color disasters</a></li>' +
+                            '</ul>' +
+                        '</div>' +
+    
+                    '<div id="legal">' +
+                        '<img id="logo" src="images/sas-logo-gray.png">' +
+                        '<a href="https://www.sas.com/en_us/legal/copyright.html">© SAS Institute Inc. All Rights Reserved.</a>' + 
+                        '<a href="https://www.sas.com/en_us/legal/privacy.html">Privacy Statement</a>' 
+        )
+
+}
+//'<button class="menu-icon white" onclick="openNav()">&#9776;</button>');
+
+
+
+
+$.when(setnav()).done(function () {
+console.log("done");
+
+$(document).ready(function () {
+
+if(document.URL.indexOf("filters") > -1) {
+$("#filters").addClass("selected");
+}
+else if(document.URL.indexOf("report-level_text") > -1) {
+$("#report_level_text").addClass("selected");
+}
+else if(document.URL.indexOf("object-level_text") > -1) {
+$("#object_level_text").addClass("selected");
+}
+else if(document.URL.indexOf("add_white_space") > -1) {
+$("#add_whitespace").addClass("selected");
+}
+else if(document.URL.indexOf("layout-simplification") > -1) {
+$("#layout_simplification").addClass("selected");
+}
+else if(document.URL.indexOf("know-your-audience") > -1) {
+$("#know-your-audience").addClass("selected");
+}
+else if(document.URL.indexOf("draft-your-report") > -1) {
+$("#draft-your-report").addClass("selected");
+}
+else if(document.URL.indexOf("craft-your-message") > -1) {
+$("#craft-your-message").addClass("selected");
+}
+else if(document.URL.indexOf("scrolling-reports") > -1) {
+$("#scrolling-reports").addClass("selected");
+}
+else if(document.URL.indexOf("accessibility") > -1) {
+$("#accessibility").addClass("selected");
+}
+else if(document.URL.indexOf("color-care") > -1) {
+$("#color-care").addClass("selected");
+}
+else if(document.URL.indexOf("harmonious-colors") > -1) {
+$("#harmonious-colors").addClass("selected");
+}
+else if(document.URL.indexOf("choose-right-visual") > -1) {
+$("#choose-right-visual").addClass("selected");
+}
+
+})
+});
+
+    
+//    
+//    
+////create html classes for overlay
+//
+//var $overlay = $('<div id="overlay"></div>');
+//var $image = $("<img>");
+//var $caption = $("<p></p>");
+//
+////add image and caption to overlay
+//$overlay.append($image);
+////$overlay.append($caption);
+//$("body").append($overlay);
+//
+////display overlay on click
+//$("section img").click(function(event){
+//    var imageLocation = $(this).attr("src");
+//    $image.attr("src", imageLocation);
+//    $overlay.show();
+//    var captionText = $(this).attr("alt");
+//    $caption.text(captionText);
+//    //prevent scrolling the page
+//    document.body.style.overflow='hidden';
+//});
+//
+////hide overlay on second click
+//$overlay.click(function(){
+//    $overlay.hide();
+//    //resort normal body scrolling
+//    document.body.style.overflow= 'auto';
+//    document.body.style.filter="blur(0px)";
+//});
+//
+
+//open nav on click
+
+function openNav() {
+document.getElementById("sidenav").style.left = "0";
+}
+//close nav on click
+function closeNav() {
+document.getElementById("sidenav").style.left = "-20rem";
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length;
+     i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling; 
+        if
+            (panel.style.display === "inline"){
+                panel.style.display = "none";}
+        else{
+            panel.style.display ="inline";
+        }
+            }
+    }
+
+
+
+
+
